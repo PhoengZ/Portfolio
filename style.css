@@ -25,21 +25,27 @@ p{
     color: rgb( 255, 204, 153);
 }
 .container{
-    display: block;
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack columns vertically */
     width: 100%;
     height: 100%;
+    align-items: center; /* Align columns in the center horizontally */
+    gap: 0px;
+
 }
 #headercolumn{
-    margin:20px 0px 0px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#headercolumn h2{
+.column1{
+    background-color: antiquewhite;
+}
+.column1 #headercolumn h2{
     font-size: 40px;
     color:black
 }
-#headercolumn span{
+.column1 #headercolumn span{
     font-size: 40px;
     color: rgb(204, 51, 0);
 }
@@ -61,12 +67,9 @@ p{
     list-style: none;
     display: flex;
     justify-content: start;
-}
-#describtion ul{
+    flex-wrap: wrap;
     padding: 0px;
-}
-#describtion ul li{
-    padding: 20px;
+    gap: 20px;
 }
 #describtion ul li div{
     border-radius: 50%;
@@ -83,4 +86,47 @@ p{
     margin-right: 20px;
     height: 40px;
     width: 40px;
+}
+.column2{
+    background-color: rgb(102, 51, 51);
+}
+.column2 #headercolumn h2{
+    font-size: 40px;
+    color:rgb(255, 204, 153);
+}
+.column2 #headercolumn span{
+    font-size: 40px;
+    color: rgb(204, 51, 0);
+}
+.col2{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.col2 #describtion ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0px;
+}
+.col2 #describtion ul li{
+    padding: 40px;
+}
+.col2 #describtion ul li div{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px; 
+    background-color: rgb(204, 51, 0);
+    padding: 20px;
+}
+.col2 #describtion ul li img{
+    height: 100px;
+    width: 100px; 
+}
+.column3{
+    background-color: rgb(204, 51, 0);
+}
+.column3 #headercolumn h2{
+    font-size: 40px;
+    color: rgb(255, 204, 153);
 }
