@@ -6,10 +6,7 @@ h3{
     margin-bottom: 10px;
     font-size: 30px;
 }
-span{
-    margin-bottom: 50px;
-    font-size: 25px;
-}
+
 p{
     font-size: 20px;
 }
@@ -40,6 +37,7 @@ p{
 }
 .column1{
     background-color: antiquewhite;
+    width: 100%;
 }
 .column1 #headercolumn h2{
     font-size: 40px;
@@ -61,10 +59,10 @@ p{
     height: 400px;
     border-radius: 15px;
 }
-#describtion{
+.col1 #describtion{
     margin-top: 50px;
 }
-#describtion ul{
+.col1 #describtion ul{
     list-style: none;
     display: flex;
     justify-content: start;
@@ -72,14 +70,18 @@ p{
     padding: 0px;
     gap: 20px;
 }
-#describtion ul li div{
+.col1 #describtion span{
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.col1 #describtion ul li div{
     border-radius: 50%;
     height: 30px;
     width: 30px; 
     background-color: rgb(204, 51, 0);
     padding: 20px;
 }
-#describtion ul li img{
+.col1 #describtion ul li img{
     height: 30px;
     width: 30px; 
 }
@@ -90,6 +92,7 @@ p{
 }
 .column2{
     background-color: rgb(102, 51, 51);
+    width: 100%;
 }
 .column2 #headercolumn h2{
     font-size: 40px;
@@ -109,14 +112,17 @@ p{
     justify-content: center;
     flex-wrap: wrap;
     padding: 0px;
+    background-color: rgb(75, 42, 42);
+    border-radius: 30px;
 }
 .col2 #describtion ul li{
     display: flex;
     padding: 40px;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
     color: rgb(255, 204, 153);
+    gap:20px;
+    font-size: 20px;
 }
 .col2 #describtion ul li div{
     border-radius: 15px;
@@ -131,11 +137,38 @@ p{
 }
 .column3{
     background-color: rgb(204, 51, 0);
+    width: 100%;
 }
 .column3 #headercolumn h2{
     font-size: 40px;
     color: rgb(255, 204, 153);
 }
 .col3{
-
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.col3 #describtion ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0px;
+    background-color: rgb(181, 46, 1);
+    border-radius: 30px;
+}
+.col3 #describtion ul li{
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    gap:20px;
+    font-size: 20px;
+    
+}
+.col3 #describtion ul li div{
+    border-radius: 15px;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 204, 153);
 }
