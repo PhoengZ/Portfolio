@@ -51,6 +51,7 @@ p{
 }
 .col1{
     display:flex;
+    align-items: center;
     margin-left: 40vh;;
     margin-right: 40vh;
 }
@@ -118,7 +119,7 @@ p{
     color: rgb(255, 204, 153);
 }
 .col2 #describtion ul li div{
-    border-radius: 50%;
+    border-radius: 15px;
     height: 100px;
     width: 100px; 
     background-color: rgb(204, 51, 0);
@@ -136,5 +137,5 @@ p{
     color: rgb(255, 204, 153);
 }
 .col3{
-    margin:0px 100px 0px 100px;
+
 }
