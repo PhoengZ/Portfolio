@@ -202,6 +202,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 }
 .col3 #describtion ul{
     list-style: none;
@@ -229,8 +230,17 @@ p{
     background-color: rgb(255, 204, 153);
 }
 .button{
-    width:10%;
-    min-height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:15vh;
+    min-height: 10vh;
+    border-radius: 50%;
+    background-color: rgb( 255, 204, 153);
+}
+.button img{
+    height: 50%;
+    width: 50%;
 }
 #load{
     animation-name: scroll;
