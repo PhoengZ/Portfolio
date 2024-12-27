@@ -68,7 +68,7 @@ p{
     margin-left: 40vh;;
     margin-right: 40vh;
 }
-#Myself{
+.Myself{
     margin: 20px 50px 50px 10px;
     width: 300px;
     height: 400px;
@@ -202,4 +202,19 @@ p{
     width: 200px;
     height: 200px;
     background-color: rgb(255, 204, 153);
+}
+#load{
+    animation-name: scroll;
+    animation-timing-function: linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+@keyframes scroll {
+    from{
+        opacity: 0.5;
+        transform: translateX(-50px);
+    }to{
+        opacity: 1.0;
+        transform: translateX(0px);
+    }
 }
