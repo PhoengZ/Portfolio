@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -42,15 +43,15 @@
             <div class="col2">
                 <div id = "describtion">
                     <ul>
-                        <li id="load"><div><img src="res/c++.png" alt="C++"></div><span>C++</span></li>
-                        <li id="load"><div><img src="res/java.png" alt="Java"></div><span>Java</span></li>
-                        <li id="load"><div><img src="res/python.png" alt="Python"></div><span>Python</span></li>
-                        <li id="load"><div><img src="res/html-5.png" alt="Html"></div><span>HTML</span></li>
-                        <li id="load"><div><img src="res/css-3.png" alt="CSS"></div><span>CSS</span></li>
-                        <li id="load"><div><img src="res/js.png" alt="Javascript"></div><span>Javascript</span></li>
-                        <li id="load"><div><img src="res/MongoDB.png" alt="MongoDB"></div><span>MongoDB</span></li>
-                        <li id="load"><div><img src="res/nodejs.png" alt="Node.js"></div><span>NodeJs</span></li>
-                        <li id="load"><div><img src="res/express-js.png" alt="Express.js"></div><span>ExpressJs</span></li>
+                        <li id="load"><a href=""></a><div><img src="res/c++.png" alt="C++"></div><span>C++</span></li>
+                        <li id="load"><a href=""></a><div><img src="res/java.png" alt="Java"></div><span>Java</span></li>
+                        <li id="load"><a href=""></a><div><img src="res/python.png" alt="Python"></div><span>Python</span></li>
+                        <li id="load"><a href=""></a><div><img src="res/html-5.png" alt="Html"></div><span>HTML</span></li>
+                        <li id="load"><a href=""></a><div><img src="res/css-3.png" alt="CSS"></div><span>CSS</span></li>
+                        <li id="load"><a href=""></a><div><img src="res/js.png" alt="Javascript"></div><span>Javascript</span></li>
+                        <li id="load"><a href=""></a><div><img src="res/MongoDB.png" alt="MongoDB"></div><span>MongoDB</span></li>
+                        <li id="load"><a href=""></a><div><img src="res/nodejs.png" alt="Node.js"></div><span>NodeJs</span></li>
+                        <li id="load"><a href=""></a><div><img src="res/express-js.png" alt="Express.js"></div><span>ExpressJs</span></li>
                     </ul>
                 </div>
             </div>
@@ -60,24 +61,26 @@
                 <img id = "logo" src="res/Projects.png" alt="">
                 <h2>Projects</h2>
             </div>
-            <div class="col3">
-                <div id = "describtion">
-                    <div class="button" id="left"></div>
-                    <ul>
-                        <li><div><a href="https://github.com/PhoengZ/Portfolio"><img src="" alt="Portfolio"></a></div></li>
-                        <li><div><a href="https://github.com/PhoengZ/Hero-adventure"><img src="" alt="Hero-adventure"></a></div></li>
-                        <li><div><a href="https://github.com/PhoengZ/Website-practice-for-investment"><img src="" alt="Website for Investment"></a></div></li>
-                        <li><div><a href="https://github.com/PhoengZ/Another-me"><img src="" alt="Another-me"></a></div></li>
-                        <li><div><a href="https://github.com/PhoengZ/Website-Block-Man-Go"><img src="" alt="Website-Block-Man-Go"></a></div></li>
-                        <li><div><a href="https://github.com/PhoengZ/ScoreTestForm"><img src="" alt="ScoreTestForm"></a></div></li>
-                        <li><div><a href="https://github.com/PhoengZ/PythonProject"><img src="" alt="PythonProject"></a></div></li>
+            <div class="col3 swiper">
+                <div id = "describtion" class="slide-wrapper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide"><div><a href="https://github.com/PhoengZ/Portfolio"><img src="" alt="Portfolio"></a></div></li>
+                        <li class="swiper-slide"><div><a href="https://github.com/PhoengZ/Hero-adventure"><img src="" alt="Hero-adventure"></a></div></li>
+                        <li class="swiper-slide"><div><a href="https://github.com/PhoengZ/Website-practice-for-investment"><img src="" alt="Website for Investment"></a></div></li>
+                        <li class="swiper-slide"><div><a href="https://github.com/PhoengZ/Another-me"><img src="" alt="Another-me"></a></div></li>
+                        <li class="swiper-slide"><div><a href="https://github.com/PhoengZ/Website-Block-Man-Go"><img src="" alt="Website-Block-Man-Go"></a></div></li>
+                        <li class="swiper-slide"><div><a href="https://github.com/PhoengZ/ScoreTestForm"><img src="" alt="ScoreTestForm"></a></div></li>
+                        <li class="swiper-slide"><div><a href="https://github.com/PhoengZ/PythonProject"><img src="" alt="PythonProject"></a></div></li>
                     </ul>
-                    <div class="button" id = "right"></div>
+                    <div class="swiper-pagination"></div>
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
-                
             </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src = main.js></script>
 </body>
 </html>

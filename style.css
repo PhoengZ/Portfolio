@@ -72,6 +72,10 @@ p{
 }
 .column1{
     background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
 }
 .column1 #headercolumn h2{
@@ -85,8 +89,7 @@ p{
 .col1{
     display:flex;
     align-items: center;
-    margin-left: 40vh;;
-    margin-right: 40vh;
+    width: 70%;
 }
 .Myself{
     margin: 20px 50px 50px 10px;
@@ -197,8 +200,7 @@ p{
     color: rgb(255, 204, 153);
 }
 .col3{
-    margin-left: 200px;
-    margin-right: 200px;
+    width: 80%;
     display: flex;
     justify-content: center;
 }
@@ -214,16 +216,14 @@ p{
 .col3 #describtion ul{
     list-style: none;
     display: flex;
-    justify-content: center;
     padding: 0px;
     height: 100%;
     background-color: rgb(181, 46, 1,0.5);
     border-radius: 30px;
-    transform: translateX(-200px); /*use it for make image slide*/
+    cursor: grab;
 }
 .col3 #describtion ul li{
     display: flex;
-    padding: 30px;
     flex-direction: column;
     align-items: center;
     color: rgb(0, 0, 0);
@@ -236,22 +236,20 @@ p{
     height: 200px;
     background-color: rgb(255, 204, 153);
 }
-.button{
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    min-height: 100%;
-    background-color: rgb( 181, 46, 1,0.5);
-    cursor: pointer;
-    z-index: 1;
+.swiper-button-prev, .swiper-button-next{
+    color: rgb(255, 204, 153);
 }
-#left{
-    left: 0;
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px; 
+    background-color: rgba(255, 204, 153, 0.7);
+    border-radius: 50%;
+    margin: 0 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
-#right{
-    right:0;
+.swiper-pagination-bullet-active {
+    background-color: rgba(255, 204, 153, 0.9);
+    transform: scale(1.2);
 }
 #load{
     animation-name: scroll;
