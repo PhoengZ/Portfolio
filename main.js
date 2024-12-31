@@ -22,7 +22,7 @@ new Swiper('.slide-wrapper', {
         768:{
             slidesPerView:2
         },
-        1024:{
+        1300:{
             slidesPerView:3
         }
     }
