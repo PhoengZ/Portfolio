@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', () => {
 new Swiper('.slide-wrapper', {
     // Optional parameters
     loop: true,
@@ -27,3 +28,4 @@ new Swiper('.slide-wrapper', {
         }
     }
   });
+});
