@@ -21,7 +21,6 @@ p{
     align-items: center;
     text-align:center;
     font-size: 100px;
-    background-color: rgb( 0, 0, 0);
     color: rgb( 255, 204, 153);
 }
 .text{
@@ -55,6 +54,7 @@ p{
     width: 100%;
     min-height: 100vh;
     z-index: -1;
+    background: radial-gradient(ellipse at top,rgb(58, 32, 23) 0%,rgb( 0,0,0) 100%);
 }
 .container{
     display: flex;
@@ -79,6 +79,7 @@ p{
     width: 100%;
 }
 .column1 #headercolumn h2{
+    margin: 30px 0px 0px 0px;
     font-size: 40px;
     color:black
 }
@@ -102,6 +103,10 @@ p{
 .col1 #describtion{
     margin-top: 0px;
 }
+.col1 #describtion p b{
+    color: blue;
+    margin-top: 0px;
+}
 .col1 #describtion ul{
     list-style: none;
     display: flex;
@@ -120,28 +125,18 @@ p{
     width: 30px; 
     background-color: rgb(204, 51, 0);
     padding: 20px;
+    transition: background-color 0.5s ease-in-out;
 }
 .col1 #describtion ul li div:hover{
-    animation-name: bt_hold;
-    animation-duration: 1s;
+    background-color: rgb(238, 145, 114);
 }
-.col1 #describtion ul li div:not(:hover){
-    animation-name: bt_leave;
-    animation-duration: 1s;
-}
-@keyframes bt_hold {
-    from{background-color: rgb(204, 51, 0)}
-    to{background-color: rgb(238, 145, 114)}
-}
-@keyframes bt_leave {
-    from{background-color: rgb(238, 145, 114)}
-    to{background-color: rgb(204, 51, 0)}
-}
+
 .col1 #describtion ul li img{
     height: 30px;
     width: 30px; 
 }
 #logo{
+    margin-top: 30px;
     margin-right: 20px;
     height: 40px;
     width: 40px;
@@ -150,7 +145,15 @@ p{
     background-color: rgb(102, 51, 51);
     width: 100%;
 }
+.column2 #headercolumn{
+    background-color: rgb(102, 51, 51);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
 .column2 #headercolumn h2{
+    margin-top: 30px;
     font-size: 40px;
     color:rgb(255, 204, 153);
 }
@@ -170,10 +173,11 @@ p{
     padding: 0px;
     background-color: rgb(75, 42, 42,0.5);
     border-radius: 30px;
+    gap: 20px;
+    padding-bottom: 20px;
 }
 .col2 #describtion ul li{
     display: flex;
-    padding: 40px;
     flex-direction: column;
     align-items: center;
     color: rgb(255, 204, 153);
@@ -196,10 +200,12 @@ p{
     width: 100%;
 }
 .column3 #headercolumn h2{
+    margin: 30px 0px 0px 0px;
     font-size: 40px;
     color: rgb(255, 204, 153);
 }
 .col3{
+    margin-top: 30px;
     width: 80%;
     display: flex;
     justify-content: center;
@@ -250,10 +256,22 @@ p{
 .col3 #describtion ul li a div{
     z-index: 1;
     width: 100%;
-    height: 50%;
+    height: 70%;
     position: absolute;
     background-color:rgb(255, 204, 153,0.7) ;
     bottom: 0;
+    border-radius: 0 0 15px 15px;
+    transform: translateY(150px);
+    transition: transform 0.3s ease-in-out;
+}
+.col3 #describtion ul li a div div{
+    z-index: 1;
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color:rgb(255, 204, 153) ;
     border-radius: 0 0 15px 15px;
     transform: translateY(100px);
     transition: transform 0.3s ease-in-out;
@@ -285,17 +303,16 @@ p{
     transform: scale(1.2);
 }
 #load{
-    animation-name: scroll;
-    animation-timing-function: linear;
+    animation: scroll 5s linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
 }
 @keyframes scroll {
     from{
-        opacity: 0.5;
-        transform: translateX(-50px);
+        opacity: 0.1;
+        transform: translateY(-25px);
     }to{
         opacity: 1.0;
-        transform: translateX(0px);
+        transform: translateY(0px);
     }
 }
