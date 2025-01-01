@@ -207,17 +207,24 @@ p{
 .column2{
     background-color: rgb(102, 51, 51);
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .column2 #headercolumn{
     background-color: rgb(102, 51, 51);
-    width: 100%;
+    width: fit-content;
     display: flex;
     justify-content: center;
     align-items: start;
+    text-align: center;
 }
 .column2 #headercolumn h2{
     margin-top: 30px;
     font-size: 40px;
+    width:fit-content;
+    flex-wrap: wrap;
     color:rgb(255, 204, 153);
 }
 .column2 #headercolumn span{
@@ -377,5 +384,73 @@ p{
     }to{
         opacity: 1.0;
         transform: translateY(0px);
+    }
+}
+@media screen and (max-width:1010px) and (min-width:675px) {
+    .text{
+        font-size: 150px;
+    }
+    .col1{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .Myself{
+        margin: 10px;
+    }
+}
+@media screen and (max-width:675px){
+    .text{
+        font-size: 75px;
+    }
+    .col1{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .Myself{
+        margin: 10px;
+    }
+    .col2{
+        margin: 0px 50px 0px 50px;
+    }
+    .col2 #describtion ul li div{
+        height: 50px;
+        width: 50px; 
+    }
+    .col2 #describtion ul li img{
+        height: 50px;
+        width: 50px; 
+    }
+    .container-button{
+        gap: 5px;
+    }
+}
+@media screen and (max-width:500px) {
+    .button{
+        visibility: hidden;
+    }
+}
+@media screen and (max-width:400px){
+    .Myself{
+        height: 300px;
+        width: 225px;
+    }
+    .col1 #describtion span{
+        font-size: 15px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    p{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:300px) {
+    .col2 #describtion ul li div{
+        height: 30px;
+        width: 30px; 
+    }
+    .col2 #describtion ul li img{
+        height: 30px;
+        width: 30px; 
     }
 }
