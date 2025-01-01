@@ -1,3 +1,7 @@
+let Main = document.querySelector(".title");
+let Aboutme = document.querySelector(".column1");
+let Skills = document.querySelector(".column2");
+let Project = document.querySelector(".column3");
 document.addEventListener('DOMContentLoaded', () => {
 new Swiper('.slide-wrapper', {
     // Optional parameters
@@ -29,3 +33,31 @@ new Swiper('.slide-wrapper', {
     }
   });
 });
+function main(){
+  Main.scrollIntoView({
+    behavior:"smooth",
+    block: "center",
+    inline: "center" 
+  });
+}
+function about_me(){
+  Aboutme.scrollIntoView({
+    behavior:"smooth",
+    block: "center",
+    inline: "center" 
+  });
+}
+function Ski(){
+  Skills.scrollIntoView({
+    behavior:"smooth",
+    block: "center",
+    inline: "center" 
+  });
+}
+function Proj(){
+  Project.scrollIntoView({
+    behavior:"smooth",
+    block: "center",
+    inline: "center" 
+  });
+}
