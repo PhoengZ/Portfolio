@@ -3,7 +3,7 @@ let Aboutme = document.querySelector(".column1");
 let Skills = document.querySelector(".column2");
 let Project = document.querySelector(".column3");
 document.addEventListener('DOMContentLoaded', () => {
-new Swiper('.slide-wrapper', {
+  const swiper = new Swiper('.slide-wrapper', {
     // Optional parameters
     loop: true,
     spaceBetween: 30,
@@ -32,7 +32,11 @@ new Swiper('.slide-wrapper', {
         }
     }
   });
+  window.addEventListener('resize', () => {
+    swiper.update();
+  });
 });
+
 function main(){
   Main.scrollIntoView({
     behavior:"smooth",
