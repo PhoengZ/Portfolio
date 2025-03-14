@@ -377,6 +377,98 @@ p{
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
 }
+.column4 {
+    background-color: rgb( 255, 204, 153);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.column4 #headercolumn {
+    width:fit-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+.column4 #headercolumn h2{
+    width:fit-content;
+    font-size: 40px;
+    color: rgb(0,0,0);
+}
+.column4 #headercolumn span{
+    font-size: 40px;
+    color: rgb(204, 51, 0);
+}
+.col4{
+    gap: 50px;
+    width: 80vw;
+    background-color: rgb(102, 51, 51);
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    margin: 0px 0px 20px 0px;
+}
+.col4 .containerBlock{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: fit-content;
+}
+.col4 .containerBlock .container-area {
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    gap: 20px;
+}
+.col4 .containerBlock .container-area textarea{
+    color: rgb(255, 204, 153);
+    background-color: #666666;
+    padding: 1em;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    outline: none;
+    resize: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    height: fit-content;
+    width: 30vw;
+    transition: all 0.5s;
+}
+.col4 .containerBlock .container-area textarea:focus{
+    background-color: white;
+    color: rgb(0,0,0);
+    cursor: text;
+    border-color: black;
+}
+#Submit{
+    margin:10px 0px 20px 0px;
+    align-self: flex-end;
+    padding: 10px 20px;
+    background-color: rgb(255, 204, 153);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    border:2px solid transparent;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.error-message {
+    color: red;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+#Submit:hover{
+    border-color: black;
+    color: black;
+}
 @keyframes scroll {
     from{
         opacity: 0.1;

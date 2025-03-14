@@ -2,6 +2,10 @@ let Main = document.querySelector(".title");
 let Aboutme = document.querySelector(".column1");
 let Skills = document.querySelector(".column2");
 let Project = document.querySelector(".column3");
+let n = document.querySelector(".Name");
+let e = document.querySelector(".Email");
+let m = document.querySelector(".Message");
+
 document.addEventListener('DOMContentLoaded', () => {
   const swiper = new Swiper('.slide-wrapper', {
     // Optional parameters
@@ -64,4 +68,25 @@ function Proj(){
     block: "center",
     inline: "center" 
   });
+}
+function Contact(){
+  document.querySelectorAll(".error-message").forEach(el => el.remove());
+  if (n.value.trim() === ""){
+    showError(".Name","Name is required!")
+  
+  }else if (e.value.trim() === ""){
+    showError(".Email","Email is required!")
+  }else{
+    alert("Submitted succesfull!");
+  }
+}
+function showError(selector, message) {
+  let inputField = document.querySelector(selector);
+  let error = document.createElement("div");
+  error.className = "error-message";
+  error.style.color = "red";
+  error.style.fontSize = "14px";
+  error.style.marginTop = "5px";
+  error.innerText = message;
+  inputField.parentNode.appendChild(error);
 }
